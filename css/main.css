@@ -168,8 +168,58 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
      to   { width: 100% }
 }
  
+.check-mark-1{
+	width:40px;
+	color:#fff;
+	font-size:25px;
+	/* padding:20px; */
+	margin:auto;
+	margin:50px 0 20px 0;
+	text-align:center;
+	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 0.1s; /*Скорость перехода состояния элемента*/
+	animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+	animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+	animation-delay: 1s; /* Задержка перед началом */
+}
 
+.check-mark-2{
+	width:40px;
+	color:#fff;
+	font-size:25px;
+	/* padding:20px; */
+	margin:auto;
+	/* margin-bottom:20px; */
+	text-align:center;
+	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 0.1s; /*Скорость перехода состояния элемента*/
+	animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+	animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+	animation-delay: 4s; /* Задержка перед началом */
+}
 
+@keyframes show{
+	0%{
+	opacity:0;
+	}
+	100% {
+	opacity:1;
+	}
+	}
+
+.content-2, .content-3{
+	display: flex;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.content-2 p{
+	padding: 60px 0 0 10px;
+}
+
+.content-3 p{
+	padding: 10px 0 0 10px;
+}
 
 @media (max-width: 440px){
 	.img{

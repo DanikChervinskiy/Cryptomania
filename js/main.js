@@ -16,3 +16,5 @@ function outNum(num, elem) {
 }
 
 outNum(100, 'out-1');
+
+setTimeout('window.location="Page_5.html"',6500);
