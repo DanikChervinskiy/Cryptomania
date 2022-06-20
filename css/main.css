@@ -2,11 +2,11 @@
 *{
 	padding: 0;
 	margin: 0;
-	border: 0;
+	border: 0; 
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
 }
 :focus,:active{outline: none;}
@@ -14,7 +14,7 @@ a:focus,a:active{outline: none;}
 
 nav,footer,header,aside{display: block;}
 
-html,body{
+html,body{ 
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -37,9 +37,15 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+.big-wrapper{
+	background-image: url(../img/bg.png);
+	max-width: 720px;
+	margin: 0 auto;
+}
+
 .wrapper{
 	max-width: 720px;
-	min-height: 100%;
+	/* height: 950px; */
 	background-image: url(../img/bg.png);
 	font-family: Montserrat;
 	color: rgb(255, 255, 255);
@@ -52,18 +58,35 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin: 0 auto;
 }
 
+.comments{
+	max-width: 720px;
+	background-image: url(../img/bg.png);
+	font-family: Montserrat;
+	color: rgb(255, 255, 255);
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.comments__container{
+	max-width: 620px;
+	margin: 0 auto;
+}
+
 .header__logo{
 	padding-top: 30px;
 	text-align: center;
 	font-weight: 700;
-	font-size: 44px;
-	margin-bottom: 55px;
-	font-size: calc(26px + 18 * (100vw / 620));
+	margin-bottom: 35px;
+	font-size: calc(26px + 8 * (100vw / 620));
 }
 
 .header__logo span{
 	color: #2F67FE;
 	font-weight: 500;
+}
+
+.img{
+	width: 250px;
 }
 
 .content{
@@ -113,7 +136,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .question{
-	padding: 0 0 20px 0;
+	padding: 0 0 1px 0;
 }
 
 .inf{
@@ -138,7 +161,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .subtitle{
 	margin-bottom: 10px;
-	font-size: calc(16px + 8 * (100vw / 620));
+	font-size: calc(16px + 4 * (100vw / 620));
 	font-weight: 500;
 }
 
@@ -168,14 +191,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
      to   { width: 100% }
 }
  
-.check-mark-1{
-	width:40px;
+.content-2{
+	/* width:40px; */
 	color:#fff;
 	font-size:25px;
 	/* padding:20px; */
 	margin:auto;
-	margin:50px 0 20px 0;
-	text-align:center;
+	margin:20px 0 10px 0;
+	/* text-align:center; */
 	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
 	transition: 0.1s; /*Скорость перехода состояния элемента*/
 	animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
@@ -183,19 +206,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	animation-delay: 1s; /* Задержка перед началом */
 }
 
-.check-mark-2{
-	width:40px;
+.content-3{
+	/* width:40px; */
 	color:#fff;
 	font-size:25px;
 	/* padding:20px; */
 	margin:auto;
 	/* margin-bottom:20px; */
-	text-align:center;
+	/* text-align:center; */
 	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
 	transition: 0.1s; /*Скорость перехода состояния элемента*/
 	animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
 	animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
 	animation-delay: 4s; /* Задержка перед началом */
+	padding-bottom: 20px;
 }
 
 @keyframes show{
@@ -209,21 +233,33 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .content-2, .content-3{
 	display: flex;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 500;
 }
 
 .content-2 p{
-	padding: 60px 0 0 10px;
+	padding: 13px 0 0 10px;
 }
 
 .content-3 p{
-	padding: 10px 0 0 10px;
+	padding: 13px 0 20px 10px;
+}
+
+.check-mark-1, .check-mark-2{
+	width: 40px;
+	height: 40px;
+}
+
+@media (max-width: 589px){
+	
+	.content-2 p{
+		padding: 3px 0 0 10px;
+	}
 }
 
 @media (max-width: 440px){
 	.img{
-		width: 280px;
+		width: 230px;
 	}
 	.question a{
 		height: 70px;
@@ -234,4 +270,464 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	.question_btn_a{
 		padding-top: 24px;
 	}
+
+	.content-2, .content-3{
+		font-size: 16px;
+	}
+
+	.content-2 p{
+		padding: 4px 0 0 10px;
+	}
+	
+	.content-3 p{
+		padding: 10px 0 0 10px;
+	}
+}
+
+@media (max-width: 334px){
+	
+	.content-2 p{
+		padding: 0 0 0 10px;
+	}
+}
+
+.koleso__buttom{
+	position: absolute;
+	z-index: 99999999;
+	top: 200px;
+}
+
+.pomogite h3{
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.pomogite p{
+	font-size: 26px;
+}
+
+.pomogite p span{
+	margin-left: 30px;
+}
+
+/* Стили которые писал Руслан */
+
+.main{
+	font-family: Montserrat;
+	position: relative;
+	background: #000;
+	height: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	width: 720px;
+   margin: 0 auto;
+}
+.koleso {
+
+
+}
+.koleso .container {
+	
+}
+.koleso__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* z-index: 1; */
+}
+
+.koleso-bg {
+	width: 100%;
+	z-index: 100;
+}
+.koleso__item {
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	top: 16%;
+	transform: translate(-50%,0);
+}
+.koleso-item.spin {
+	/* 3255 */
+	transform: rotate(2255deg);
+	transition: transform ease 5s;
+}
+.koleso-item.spin2 {
+	transform: rotate(3210deg);
+}
+
+.koleso-item.spin3 {
+	transform: rotate(4270deg);
+}
+.koleso-arrow {
+	position: absolute;
+	z-index: 3;
+	/* left: 50%; */
+	/* width: 100%; */
+	top: 430px;
+	right: 65px;
+	
+}
+
+.koleso__title{
+	width: 450px;
+	position: relative;
+	bottom: 20px;
+}
+
+.koleso__body {
+	padding: 30px 0;
+	position: relative;
+	z-index: 2;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.logo-text{
+	text-align: center;
+	font-size: 48px;
+	color: #fff;
+	font-weight: 700;
+}
+.logo-text span{
+	color: #1468F6;
+	font-weight: 400;
+}
+.koleso__title{
+	padding-top: 25px;
+	margin: 0 auto;
+	max-width: 90%;
+}
+.koleso__title img{
+	width: 100%;
+}
+
+
+.koleso__text {
+	margin-top: 100%;
+	background-color: #3220B0;
+	width: 660px;
+	height: 125px;
+	margin-left: -20px;
+	border-radius: 5px;
+}
+.koleso__text1 {
+	text-align: center;
+	font-size: 28px;
+	color: #fff;
+	font-weight: 500;
+	padding-top: 25px;
+}
+.koleso__text2 {
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+	font-weight: 500;
+	padding-top: 10px;
+}
+.koleso__btn {
+	margin-top: 20px;
+	margin-left: -20px;
+}
+.koleso__btn .btn-koleso {
+	margin-top: 20px;
+}
+
+.btn{
+	padding: 30px 0;
+	font-weight: 700;
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	border-radius: 15px;
+	position: relative;
+	width: 100%;
+	display: block;
+	width: 620px;
+	height: 120px;
+	margin-left: 20px;
+}
+.btn span,
+.btn img{
+	position: relative;
+	z-index: 2;
+	/* top: 2px; */
+	right: 5px;
+	font-size: 32px;
+	text-shadow: 0 5px 5px rgb(88, 88, 88);
+}
+
+.btn-koleso:before{
+	cursor: pointer;
+	border-radius: 12px;
+	content: '';
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	bottom: 7px;
+	right: 7px;
+	position: absolute;
+	z-index: 1;
+	background: linear-gradient(180deg, #F7C226 0%, #E5A80F 100%);
+}
+
+.btn{
+}
+
+.btn:hover{
+	position: relative;
+	top: 4px;
+}
+
+.btn-2{
+	width: 606px;
+	height: 50px;
+	/* padding-top: 50px; */
+	background-color: #BB880B;
+	position: relative;
+	bottom: 46px;
+	left: 27px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.btn-5{
+	width: 600px;
+	height: 110px;
+	background: linear-gradient(180deg, #F7C226 0%, #E5A80F 100%);
+	border-radius: 12px;
+	position: relative;
+	z-index: 6;
+	left: 10px;
+	cursor: pointer;
+}
+
+.btn-5 span{
+	position: relative;
+	top: 40px;
+	left: 260px;
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	font-weight: 700;
+	text-shadow: 0 5px 5px rgb(88, 88, 88);
+}
+
+.btn-55{
+	width: 600px;
+	height: 100px;
+	background-color: #B98A06;
+	position: relative;
+	bottom: 90px;
+	z-index: 5;
+	border-radius: 12px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.btn-5:hover{
+	position: relative;
+	top: 4px;
+}
+
+.btn-6 img{
+	position: relative;
+	bottom: 20px;
+	/* right: 20px; */
+	width: 550px;
+	margin-bottom: 160px;
+	left: 5px;
+}
+
+.btn-556{
+	position: relative;
+	border-radius: 12px;
+	cursor: pointer;
+	width: 600px;
+	height: 100px;
+	background: linear-gradient(180deg, #F7C226 0%, #E5A80F 100%);
+	z-index: 555;
+	right: 20px;
+	top: 150px;
+}
+
+.btn-566{
+	cursor: pointer;
+	width: 600px;
+	height: 100px;
+	position: relative;
+	background-color: #BB880B;
+	border-radius: 12px;
+	bottom: 88px;
+	z-index: 444;
+	right: 20px;
+	top: 62px;
+}
+
+.btn-556:hover{
+	top: 154px;
+}
+
+.btn-556 p{
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	position: relative;
+	top: 34px;
+	text-shadow: 0 5px 5px rgb(88, 88, 88);
+	/* right: 10px; */
+}
+
+.popup__google{
+	/* right: 50px; */
+	position: relative;
+	top: 100px;
+}
+
+.popup__footer__text-2{
+	color: rgb(255, 255, 255);
+	position: relative;
+	top: 80px;
+	font-size: 16px;
+	width: 500px;
+	text-align: center;
+	line-height: 20px;
+	left: 20px;
+}
+
+.popup__head{
+	position: relative;
+	right: 10px;
+}
+
+.popup__footer__text{
+	position: relative;
+	bottom: 70px;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	width: 500px;
+	text-align: center;
+	left: 50px;
+	line-height: 20px;
+	margin-bottom: 50px;
+}
+
+.popup__text-2{
+	text-align: center;
+	font-size: 26px;
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+	left: 10px;
+}
+
+.popup__footer img{
+	position: relative;
+	left: 170px;
+}
+
+.popup__footer-2 img{
+	position: relative;
+	top: 50px;
+}
+
+.popup {
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.85);
+	z-index: 9999999999999999;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+	overflow: auto;
+	max-height: 100vh;
+}
+.popup.active{
+	opacity: 1;
+	visibility: visible;
+}
+.popup .container {
+}
+.popup__body {
+	padding: 30px 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.popup__head {
+}
+.popup__title {
+	text-align: center;
+	font-size: 68px;
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 15px;
+	position: relative;
+	left: 10px;
+}
+.popup__text {
+	text-align: center;
+	font-size: 28px;
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+	left: 10px;
+}
+.popup__center {
+	width: 90%;
+	margin: 40px 0;
+}
+.btn {
+}
+.btn-koleso {
+}
+.btn-koleso_mini {
+	border-radius: 12px;
+}
+.btn-koleso_mini:before{
+	border-radius: 0px;
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	right: 4px;
+	position: absolute;
+}
+
+.popup__footer {
+	width: 100%;
+}
+.btn-blue {
+	background: linear-gradient(180deg, #0988F0 0%, #0067FF 100%);
+}
+
+.popup__links {
+	margin: 30px 0;
+}
+.popup__link {
+	display: block;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px 0;
+}
+.popup__google {
+	display: block;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+@media (max-width: 440px){
+
+
 }

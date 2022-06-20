@@ -1,51 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=720">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
     <title>Cryptomania</title>
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="logo">
-                <h1 class="header__logo">
-                    Crypto<span>mania</span>
-                </h1>
+    <div class="main">
+        <div class="koleso">
+            <div class="koleso__img">
+                <img src="img/bg (2).png" class="koleso-bg" alt="">
+                <div class="koleso__item">
+                    <img src="img/wheel.png" alt="" class="koleso-item">
+                </div>
+                <img src="img/arrow.png" alt="" class="koleso-arrow">
             </div>
-            <img class="img" src="img/Group 1.png" alt="">
-            <div class="content">
-                <div class="content_text_1">
-                    You can get a VIRTUAL <span>$3000</span>, <span>$5000</span> or <span>$10000</span> BONUS from our Partner "Cryptomania".<br>All you need to do to get a fidt is to answere these 3 questions
-                </div>
-                <div class="content_text_2">
-                    <span>Remember:</span> Only 100 randomly selected users have received this invitation, the number of gifts is limited.
-                </div>
-            </div>
-            <div class="question">
-                <div class="question_title">
-                    <h2>What device are you using now?</h2>
-                </div>
-                <div class="question_btn">
-                    <a href="Page_2.html" class="question_btn_a">
-                            Mobile phone
-                    </a>
-                    <a href="Page_2.html" class="question_btn_a">
-                            Tablet
-                    </a>
-                    <a href="Page_2.html" class="question_btn_a">
-                            Desktop
-                    </a>
-                    <a href="Page_2.html" class="question_btn_a last_btn">
-                            Other
-                    </a>
+            <div class="container">
+                <div class="koleso__body">
+                    <div class="koleso__top">
+                        <!-- <div class="logo-text">Crypto<span>mania</span></div> -->
+                        <div class="koleso__title">
+                            <img src="img/title.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="koleso__buttom">
+                        <div class="koleso__text">
+                            <p class="koleso__text1">Spin the wheel and get a chance to win</p>
+                            <p class="koleso__text2">$5,000 in your account or Bitcoin</p>
+                        </div>
+
+                        <div class="koleso__btn">
+                            <p class="koleso__text1">Registration closed in 00:35 minutes</p>
+                            <div class="btn btn-koleso spin-btn"><span>Spin</span></div>
+                            <div class="btn-2"></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <div id="popup-sory" class="popup">
+            <div class="container">
+                <div class="popup__body">
+                    <div class="popup__head">
+                        <p class="popup__title">Sorry, you lose</p>
+                        <p class="popup__text">You get only 2 chance for win! Try again</p>
+                    </div>
+                    <div class="popup__center">
+                        <div class="btn-6 btn-koleso-5 btn-koleso_mini"><img src="img/pop_up_3.png" alt=""></div>
+                    </div>
+                    <div class="popup__footer">
+                        <div class="btn-5 btn-blue-5 try-again"><span>Spin</span></div>
+                        <div class="btn-55"></div>
+                        <div class="popup__footer__text">
+                            <p>After click on the button? you will redirecting on the Play Market. All right reserved
+                            </p>
+                        </div>
+                        <img src="img/koleso/google.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-again" class="popup">
+            <div class="container">
+                <div class="popup__body">
+                    <div class="popup__head">
+                        <p class="popup__title">You win +1 spin</p>
+                        <p class="popup__text">Spin the well again! Good luck</p>
+                    </div>
+                    <div class="popup__center">
+                        <div class="btn-6 btn-koleso-5 btn-koleso_mini"><img src="img/pop_up_1.png" alt=""></div>
+                    </div>
+                    <div class="popup__footer">
+                        <div class="btn-5 btn-blue-5 try-again spin-plus "><span>Spin</span></div>
+                        <div class="btn-55"></div>
+                        <div class="popup__footer__text">
+                            <p>After click on the button? you will redirecting on the Play Market. All right reserved
+                            </p>
+                        </div>
+                        <img src="img/koleso/google.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-win" class="popup">
+            <div class="container">
+                <div class="popup__body">
+                    <div class="popup__head">
+                        <p class="popup__title">Congratulation</p>
+                        <p class="popup__text-2">You win virtual bonus 5.000$ on you deposit</p>
+                    </div>
+                    <img src="img/pop_up_2.png" alt="">
+                    <div class="popup__center">
+                        <div class="btn-556 btn-koleso-5 btn-koleso_mini"><p>Spin</p></div>
+                        <div class="btn-566"></div>
+                        <div class="popup__footer__text-2">
+                            <p>After click on the button? you will redirecting on the Play Market. All right reserved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="popup__footer-2">
+
+                        <a href="#" class="popup__google">
+                            <img src="img/koleso/google.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
     <script src="/js/main.js"></script>
 </body>
+
 </html>
